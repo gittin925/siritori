@@ -79,4 +79,4 @@ with col3:
         st.session_state.history = []
         st.rerun()
 
-st.text_area("履歴"," - ".join(st.session_state.history))
+st.text_area("履歴"," - ".join(st.session_state.history),placeholder="しりとりれきが表示される")
