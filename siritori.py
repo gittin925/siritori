@@ -63,7 +63,7 @@ with col1:
                 if kana_match(end,start):
                     st.session_state.word = input_word
                     st.session_state.history.append(input_word)
-                    st.write("次の単語を入力")
+                    st.rerun()
                 else:
                     st.write("つづく単語を入力")
         else:
