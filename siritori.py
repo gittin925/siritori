@@ -45,8 +45,10 @@ with col1:
     if st.session_state.history and st.session_state.history[-1][-1]=="ん":
         st.error("終了")
     elif st.button("入力完了"):
+        if not input_word:
+            st.warning("単語を入力してください")
         #ひらがな以外が含まれていないかを判定
-        if check(input_word):
+        elif check(input_word):
             if input_word in st.session_state.history:
                 st.warning("すでに使われている単語です。")
             elif not st.session_state.word:
