@@ -55,7 +55,6 @@ with col1:
                 #最初の単語を記録
                 st.session_state.word = input_word
                 st.session_state.history.append(input_word)
-                clear_text()
                 st.rerun()
             else:
                 #つづく単語かを判定
@@ -64,7 +63,6 @@ with col1:
                 if kana_match(end,start):
                     st.session_state.word = input_word
                     st.session_state.history.append(input_word)
-                    clear_text()
                     st.rerun()
                 else:
                     st.write("つづく単語を入力")
