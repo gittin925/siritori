@@ -62,9 +62,7 @@ with col1:
                 start = input_word[0]
                 if kana_match(end,start):
                     st.session_state.word = input_word
-                    st.balloons()
                     st.session_state.history.append(input_word)
-                    st.rerun()
                     st.write("次の単語を入力")
                 else:
                     st.write("つづく単語を入力")
