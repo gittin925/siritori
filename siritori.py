@@ -37,7 +37,7 @@ if "word" not in st.session_state:
 if "history" not in st.session_state:
     st.session_state.history = []
 
-input_word = st.text_input(f"前の単語：{st.session_state.word if st.session_state.word else "未入力"}",key="text",placeholder="ひらがな入力")
+input_word = st.text_input(f"前の単語：{st.session_state.word if st.session_state.word else '未入力'}",key="text",placeholder="ひらがな入力")
 
 col1, col2, col3 = st.columns([2,1,1])
 
