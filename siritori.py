@@ -70,8 +70,7 @@ with col1:
             st.warning("使用できない文字が含まれています")
 
 with col2:
-    if st.button("クリア",on_click=clear_text):
-        pass
+    st.button("クリア",on_click=clear_text)
 
 with col3:
     if st.button("リセット",on_click=clear_text):
